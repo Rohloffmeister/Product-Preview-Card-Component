@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  font-family: Montserrat;
+  margin: 0;
+  height: 100vh;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.img-mobile {
+  width: 100%;
+  border-radius: 2% 2% 0% 0%;
+  margin: 0;
+  padding: 0;
+}
+.img-desktop {
+  display: none;
+}
+h2 {
+  font-family: Fraunces;
+  font-weight: 700;
+  margin: 0 auto;
+  font-size: 2em
+}
+h3 {
+  letter-spacing: 0.35em;
+  font-weight: 400;
+  color: hsl(228, 12%, 48%);
+}
+.text {
+  line-height: 2.5vh;
+  font-weight: 400;
+  font-size:1.2em;
+  max-inline-size: 80%;
+  color: hsl(228, 12%, 48%);
+}
+.btn-gr {
+  font-family: Montserrat;
+  font-weight: 700;
+  color: white;
+  background-color: hsl(158, 36%, 37%);
+  width: 90%;
+  height: 4em;
+  border: none;
+  border-radius: 0.6em;
+  margin-bottom: 1.5em;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-gr:hover {
+  background-color: hsl(158, 36%, 19%);
+}
+.inner-container {
+  max-width: 90%;
+  text-align: left;
+}
+
+.container {
+  margin-top: 2vh;
+  min-width: min-content;
+  max-width: 90%;
+  background-color: white;
+  border-radius: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2vh;
+}
+.prices {
+  margin-top: 0;
+  padding-top: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.price {
+  margin-right: 0.4em;
+  display: inline;
+  font-family: Fraunces;
+  color: hsl(158, 36%, 37%);
+  font-size: calc(1em + 2vw);
+  font-weight: 600;
+}
+
+.oldprice {
+  display: inline;
+  text-decoration: line-through;
+  color: hsl(228, 12%, 48%);
+  margin: 0;
+  padding: 0;
+}
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+ @media screen and (min-width: 1000px) {
+    .container {
+     
+      max-width:40% !important;
+      max-height: 50% !important;
+ 
+    }
+  }
+@media screen and (min-width: 600px) {
+ 
+  h2{
+    font-size: calc(0.5em + 1vw);
+  }
+  .container {
+    
+    flex-direction: row;
+    width: auto;
+    max-width: 50%;
+    min-height: fit-content;
+    max-height: fit-content;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .text {
+    line-height: 3vh;
+    margin-bottom: 1vh;
+    font-size:calc(0.5em + 0.5vw);
+  }
+  .buyinfo {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: auto;
+  }
+  .inner-container {
+    display: grid;
+    align-content: space-between;
+    height: 100%;
+    width: 50%;
+    margin: 0 2em;
+  }
+  .price {
+    margin-top: 1vh;
+    font-size: calc(0.4em + 2vw);
+    margin-bottom: 0.5vh;
+    margin-top:0.5vh;
+  }
+  .btn-gr {
+    height: 6vh;
+    max-width: 90%;
+  }
+
+  .img-mobile {
+    display: none;
+  }
+
+  .img-desktop {
+    height: 100%;
+    width: 50%;
+    border-radius: 2% 0 0 2%;
+    display: inline-block;
+  }
+}
